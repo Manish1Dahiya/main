@@ -3,16 +3,17 @@ package seedu.address.model;
 
 import javafx.collections.ObservableList;
 import seedu.address.model.person.ReadOnlyTask;
+import seedu.address.model.person.ReadOnlyTask;
 import seedu.address.model.tag.Tag;
 
 /**
- * Unmodifiable view of an address book
+ * Unmodifiable view of a task manager
  */
-public interface ReadOnlyAddressBook {
+public interface ReadOnlyTaskManager {
 
     /**
-     * Returns an unmodifiable view of the persons list.
-     * This list will not contain any duplicate persons.
+     * Returns an unmodifiable view of the task list.
+     * This list will not contain any duplicate tasks.
      */
     ObservableList<ReadOnlyTask> getTaskList();
 
