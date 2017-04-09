@@ -69,6 +69,7 @@ The date expression can be in standard language. <br>
 > * Time for a task will only be shown if it is specified in the command itself. Otherwise, time will not be shown. For example, 12pm, 1400, 2.30pm. <br>
 > * The start date specified must also be before the end date. <br>
 > * The tag should be one word long only i.e. there should be no spaces in a specific tag. For example, tags such as 'very urgent' will nto be accepted as the tag is not one word. However, there can be more than one tag. <br>
+> * Once a tag is created, it can be changed but it cannot be removed from its task. <br>
 
 **Event format:** <br>
 `add <TASK_NAME> [<START_DATE_MARKER> <DATE_START_TIME>] [<END_DATE_MARKER> <DATE_END_TIME>] [t/ TAG_NAME]...`<br>
@@ -181,6 +182,7 @@ This command will edit the task 'exercise regularly' by removing the dates added
 > * If a task only has the start attributes (after the edit command), it will not be accepted by pota-todo. To understand more, please refer to the FAQ section in the end. <br>
 > * The start date specified must be before the end date. <br>
 > * The tag should be one word long only i.e. there should be no spaces in a specific tag. For example, tags such as 'very urgent' will nto be accepted as the tag is not one word. However, there can be more than one tag. <br>
+> * Once a tag is created, it can be changed but it cannot be removed from its task. <br>
 
 ### 2.5. Searching for all tasks containing a name : `find`
 
@@ -318,11 +320,11 @@ Therefore, there is no need to save manually. <br>
 > * Events: Start Date and End Date
 > * Deadlines: End Date Only
 > * Floating: No dates 
-<br>
+
 As there are no valid task types with only a start date attribute, it is not accepted. <br>
 
-**Q:** Why is that after I edit a task, which falls within the notification period, the notification icon does not appear at the top right of that task. How can I overcome this?
-**A:** In order for the notification icon to appear on the top right of an edited task, the task manager has to be restarted i.e. close and open again.
+**Q:** Why is that after I edit a task, which falls within the notification period, the notification icon does not appear at the top right of that task. How can I overcome this? <br>
+**A:** In order for the notification icon to appear on the top right of an edited task, the task manager has to be restarted i.e. close and open again.<br>
 
 ## 4. Command Summary
 
